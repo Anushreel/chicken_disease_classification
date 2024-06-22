@@ -1,0 +1,17 @@
+tensorflow
+pandas
+numpy
+matplotlib
+seaborn
+dvc
+notebook
+python-box==6.0.2
+pyYAML  #read yaml file
+tqdm
+ensure==1.0.2
+joblib
+types-pyYAML
+scipy
+Flask
+Flask-Cors
+-e .
