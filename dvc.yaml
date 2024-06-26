@@ -1,5 +1,5 @@
 # it will track the pipeline
-
+# main.py will do everything again even if its there but dvc will skip... it'll run only what part is not present
 stages:
   data_ingestion:
     cmd: python src/chicken_disease_classification/pipeline/stage_01_data_ingestion.py
