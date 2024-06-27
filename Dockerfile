@@ -1,6 +1,6 @@
 FROM python:3.11-slim-buster
 
-RUN apt update -y && apt install awscii -y
+RUN apt update -y && apt install awscli -y
 WORKDIR /app
 
 COPY . /app
