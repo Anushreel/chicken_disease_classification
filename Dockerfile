@@ -19,6 +19,9 @@ WORKDIR /app
 # Copy the necessary files first
 COPY requirements.txt setup.py /app/
 
+# Copy the source files
+COPY src /app/src
+
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
@@ -30,6 +33,7 @@ EXPOSE 8080
 
 # Set the entry point
 CMD ["python3", "app.py"]
+
 
 
 

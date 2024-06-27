@@ -11,10 +11,6 @@ env/
 .git
 .gitignore
 
-# Ignore Docker files
-Dockerfile
-.dockerignore
-
 # Ignore logs
 *.log
 
@@ -24,6 +20,5 @@ Dockerfile
 # Ignore local configuration files
 *.local
 *.development
-*.env
 .vscode/
 .idea/
