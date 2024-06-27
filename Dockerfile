@@ -13,8 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends awscli \
 # Set the working directory
 WORKDIR /app
 
-# Copy only the necessary files
-COPY requirements.txt /app/
+# Copy the necessary files first
+COPY requirements.txt setup.py /app/
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
@@ -27,6 +27,7 @@ EXPOSE 8080
 
 # Set the entry point
 CMD ["python3", "app.py"]
+
 
 
 # FROM python:3.11-slim-buster
