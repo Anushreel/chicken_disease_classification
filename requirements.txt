@@ -6,7 +6,7 @@ seaborn
 dvc
 notebook
 python-box==6.0.2
-pyYAML  #read yaml file
+pyYAML  
 tqdm
 ensure==1.0.2
 joblib
