@@ -5,6 +5,9 @@ FROM python:3.11-slim-buster
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 
+# Upgrade pip, setuptools, and wheel
+RUN pip install --no-cache-dir --upgrade pip setuptools wheel
+
 # Install dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends awscli \
     && apt-get clean \
